@@ -8,3 +8,6 @@ function DateNow(){
     let year = presentday.getFullYear();
     return "("+month+"/"+day+"/"+year+")"
 }
+function KtoF(value){
+    return ((value-273.15)*1.8)+32
+  }
