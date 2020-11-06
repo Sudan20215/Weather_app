@@ -11,3 +11,17 @@ function DateNow(){
 function KtoF(value){
     return ((value-273.15)*1.8)+32
   }
+  function setToLocalStorage(data){
+    const value= JSON.parse(localStorage.getItem("myWeatherData"))
+    let newArray=[];
+    if(value){
+     if(!value.includes(data.toLowerCase())){
+         newArray=[...value]
+         newArray.push(data)
+         localStorage.setItem('myWeatherData',JSON.stringify(newArray))
+     }
+    }else{
+     newArray.push(data)
+     localStorage.setItem('myWeatherData',JSON.stringify(newArray))
+    }
+ }
