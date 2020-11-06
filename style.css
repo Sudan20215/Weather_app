@@ -1,62 +1,67 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-  body {
-    box-sizing: border-box;
-    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-  .navigation {
-    background-color: #2d3338;
-    height: 10vh;
-    color: #dad9d1;
-    font-size: 2rem;
-    width: 99vw;
-  }
-  .dashboard {
-    font-size: 2.5rem;
-    font-weight: 400;
-    padding: auto;
-  }
-  
-  .main-wrapper {
-    width: 100vw;
-    height: 90vh;
-    background-color: #ffffff;
-  }
-  .bar {
-    background-color: #f8f9fa;
-    height: 90vh;
-  }
-  .mainbar {
-    background-color: #ffffff;
-    width: 75vw;
-    height: 100vh;
-  }
-  
-  .topbar{
-    width: 74vw;
-    height: 40%;
-  }
-  .end {
-    width: 74vw;
-  }
-  .card-col {
-    background-color: #007bff;
-  }
-  .search-button {
-    margin-left: -0.5rem !important;
-  }
-  .forcastCard {
-    width: 10rem;
-  }
-  .uv {
-    background-color: #dc3545;
-    height: 1.5rem;
-    width: 3rem;
-    padding-left: 0.5rem;
-    border-radius: 2px;
-    color: #ffffff;
-  }
-  
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+.navbar{
+  background-color: #2d3338;
+  height: 10vh;
+  color: #dad9d1;
+  font-size: 2rem;
+  width: 99vw;
+}
+.weather-dashboard {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-wrapper {
+ padding: 0px;
+ font-size: 20px;
+}
+.sidebar {
+  background-color: #f8f9fa;
+  height: 90vh;
+}
+.main-bar {
+  background-color: #ffffff;
+  width: 75vw;
+  height: 100vh;
+}
+
+.main-top {
+  width: 74vw;
+  height: 40%;
+}
+.main-buttom {
+  width: 74vw;
+}
+.card-col {
+  background-color: #007bff;
+}
+.search-button {
+  margin-left: -0.5rem !important;
+}
+.forcastCard {
+  width: 10rem;
+}
+.uv {
+  background-color: #dc3545;
+  height: 1.5rem;
+  width: 3rem;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.search{
+    font-size: 35px;
+}
