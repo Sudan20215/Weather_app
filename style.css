@@ -6,16 +6,15 @@
   body {
     box-sizing: border-box;
     font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 100%;
   }
-  .nav-wrapper {
+  .navigation {
     background-color: #2d3338;
     height: 10vh;
     color: #dad9d1;
     font-size: 2rem;
     width: 99vw;
   }
-  .weather-dashboard {
+  .dashboard {
     font-size: 2.5rem;
     font-weight: 400;
     padding: auto;
@@ -26,21 +25,21 @@
     height: 90vh;
     background-color: #ffffff;
   }
-  .sidebar {
+  .bar {
     background-color: #f8f9fa;
     height: 90vh;
   }
-  .main-bar {
+  .mainbar {
     background-color: #ffffff;
     width: 75vw;
     height: 100vh;
   }
   
-  .main-top {
+  .topbar{
     width: 74vw;
     height: 40%;
   }
-  .main-buttom {
+  .end {
     width: 74vw;
   }
   .card-col {

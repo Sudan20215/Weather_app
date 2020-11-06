@@ -1,5 +1,5 @@
-const form = document.querySelector(".sidebar form");
-const input = document.querySelector(".sidebar input");
+const form = document.querySelector(".bar form");
+const input = document.querySelector(".bar input");
 const apiKey="668e3d39d52a645e064391881ef3df01"
 function DateNow(){
     let presentday = new Date();
