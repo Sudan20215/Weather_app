@@ -12,6 +12,58 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row nav-wrapper">
+          <nav class="navbar mx-auto">
+            <h1 class="navbar-brand mx-auto my-auto weather-dashboard">Weather Dashboard</h1>
+          </nav>
+        </div>
+        <div class="row main-wrapper">
+           <div class="col-3 sidebar">
+             <div class="my-3">
+              <form class="form-inline my-2 my-lg-0">
+                <h2>Search For City</h2>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search City" aria-label="Search">
+                <button class="btn btn-outline-success bg-primary my-2 my-sm-0 search-button" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 172 172"
+                  style=" fill:#000000;">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="original-icon" fill="#ffffff"><path d="M64.5,14.33333c-27.6214,0 -50.16667,22.54527 -50.16667,50.16667c0,27.6214 22.54527,50.16667 50.16667,50.16667c12.52732,0 23.97256,-4.67249 32.7819,-12.31771l3.05143,3.05143v9.26628l40.03256,40.03256c3.95599,3.95599 10.37733,3.956 14.33333,0c3.956,-3.956 3.956,-10.37733 0,-14.33333l-40.03256,-40.03256h-9.26628l-3.05143,-3.05143c7.64521,-8.80934 12.31771,-20.25458 12.31771,-32.7819c0,-27.6214 -22.54527,-50.16667 -50.16667,-50.16667zM64.5,28.66667c19.87509,0 35.83333,15.95824 35.83333,35.83333c0,19.87509 -15.95825,35.83333 -35.83333,35.83333c-19.87509,0 -35.83333,-15.95825 -35.83333,-35.83333c0,-19.87509 15.95824,-35.83333 35.83333,-35.83333z"></path></g></g></svg>
+                </button>
+              </form>
+             </div>
+            <div class="card" id="histryData" style="width:23vw">
+              <ul class="list-group list-group-flush " id="history-ul">
+              </ul>
+            </div>
+            <div class="text-primary mt-3" id="historyMessage">No search history available</div>
+           </div>
+      
+           <div class="col-9 main-bar">
+             <div class="row main-top p-4" id="main-top">
+              <div class="card" style="width: 100%; height:vh;">
+                <div class="card-body" id="cityName">
+                </div>
+              </div>
+             </div>
+             <div class="row main-buttom p-4" id="main-buttom">
+               <div class="w-100 ml-3">
+                 <h2>5-Day Forecast:</h2>
+                </div>  
+               <div class="d-flex w-100 mt-4" id="forecast"> 
+               </div>
+               
+             </div>
+             <div class="w-100 text-center h-100" id="messageText">
+               <h1 class="mt-5 text-warning">Please Search City to See data</h1>
+              </div>
+              <div class="w-100 text-center h-100 " id="messageText1">
+                <h1 class="mt-5 text-warning">Please Enter valid City to See data</h1>
+               </div>
+           </div>
+        </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
