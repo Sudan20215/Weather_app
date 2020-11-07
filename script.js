@@ -6,8 +6,8 @@ function DateNow(){
     let presentday = new Date();
     let day = String(presentday.getDate()).padStart(2, '0');
     let month = String(presentday.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let year = presentday.getFullYear();
-    return "("+month+"/"+day+"/"+year+")"
+    let yyyy = presentday.getFullYear();
+    return "("+month+"/"+day+"/"+yyyy+")"
 }
 
 function KtoF(value){// kelvin to foreighheight conversion
@@ -134,12 +134,4 @@ $(document).ready(function(){
       alert("The paragraph was clicked.");
     });
   });
-  function Clearsearch() {
-
-    document.getElementById("myInput").value = "";
-    localStorage.clear();
-    alert("Please reload the page to clear the searches")
-   
-}
-Clearsearch("onclick",clear)
 
