@@ -131,7 +131,7 @@ async function getUvIndex(lat,lon){
 
 $(document).ready(function(){
     $("#history-item").click(function(){
-      alert("The paragraph was clicked.");
+      alert("Need to update!!!! sorry");
     });
   });
   function Clearsearch() {
